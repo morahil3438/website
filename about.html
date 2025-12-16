@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>About The Purchase Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>About The Purchase Portal</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="add_purchase.html">Add Purchase</a>
+<a href="view_purchase.html">View Purchases</a>
+<a href="report.html">Reports</a>
+<a href="about.html">About</a>
+</nav>
+</header>
+
+
+<section>
+    <h2>What is the Purchase Data Management Portal?</h2>
+    <p>
+        This portal is a lightweight, client-side application designed to help you quickly record, track, and summarize your purchase transactions. It provides a simple, clean interface for managing individual purchase records and generating instant reports.
+    </p>
+
+    <h2>Key Features</h2>
+    <ul>
+        <li><strong>Add Purchase:</strong> Easily input new records with item name, quantity, and price. Includes client-side validation for required and numeric fields.</li>
+        <li><strong>View Records:</strong> See a detailed, tabular view of all stored purchases, including a unique ID for each transaction, and the calculated total price (Price x Quantity).</li>
+        <li><strong>Reports:</strong> Instantly calculate key metrics, including the total number of purchases, the total amount spent across all records, and the highest value of a single purchase.</li>
+        <li><strong>Data Management:</strong> Includes a **"Clear All Records"** button on the View page for bulk data deletion and a **"Reset"** button on the Add page for form cleanup.</li>
+        <li><strong>Currency:</strong> All monetary values are consistently displayed using the **Indian Rupee symbol (₹)**.</li>
+    </ul>
+
+    <h2>Technology & Data Persistence</h2>
+    <p>
+        This application is built entirely using standard web technologies: **HTML**, **CSS**, and **JavaScript**. 
+        Crucially, all your purchase data is stored locally in your browser using **Web Storage (localStorage)**.
+    </p>
+    <p>
+        **Note on Local Storage:** This means your data is persistent even if you close the browser, but it is tied to the specific browser and device you are using. To function correctly, this project should be run using a local web server (e.g., accessed via <code>http://</code> or <code>https://</code>, not <code>file://</code>).
+    </p>
+</section>
+</body>
+</html>
